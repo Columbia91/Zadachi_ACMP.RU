@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.IO;
 
 namespace ArifProgessiya
 {
@@ -21,7 +16,9 @@ namespace ArifProgessiya
             {
                 numbs[i] = int.Parse(str2[i]);
             }
-
+            int unknownNumb = numbs[0] + (numbs[2] - 1) * (numbs[1] - numbs[0]);
+            sw.Write(unknownNumb);
+            sw.Close();
         }
     }
 }
